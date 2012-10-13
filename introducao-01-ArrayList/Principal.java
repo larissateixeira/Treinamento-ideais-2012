@@ -8,11 +8,12 @@ public class Principal
 
 		ArrayList<Empregado> listaDeEmpregados = new ArrayList<Empregado>(TAM);
 
-		String nome,empregadoRemover;
-		double salario;
+		String nome;
+		String empregadoRemover;
+		Double salario;
 		Empregado umEmpregado;
 
-		boolean continua = true;
+		Boolean continua = true;
 		while (continua)
 		{	System.out.println('\n' + "O que voc� deseja fazer?");
 			System.out.println('\n' + "1. Cadastrar um empregado");
