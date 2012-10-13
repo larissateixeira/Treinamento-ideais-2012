@@ -14,19 +14,19 @@ public class Principal
 
 		boolean continua = true;
 		while (continua)
-		{	System.out.println('\n' + "O que você deseja fazer?");
+		{	System.out.println('\n' + "O que vocï¿½ deseja fazer?");
 			System.out.println('\n' + "1. Cadastrar um empregado");
 			System.out.println("2. Alterar um empregado");
 			System.out.println("3. Remover um empregado");
-			System.out.println("4. Listar relação de empregados");
+			System.out.println("4. Listar relaï¿½ï¿½o de empregados");
 			System.out.println("5. Sair");
 						
-			int opcao = Console.readInt('\n' + "Digite um número entre 1 e 5:");			
+			int opcao = Console.readInt('\n' + "Digite um nï¿½mero entre 1 e 5:");			
 					
 			switch (opcao)
 			{	case 1:
 					nome = Console.readLine("Informe o nome: ");
-					salario = Console.readDouble("Informe o salário: ");
+					salario = Console.readDouble("Informe o salï¿½rio: ");
 					
 					umEmpregado = new Empregado(nome, salario);
 
@@ -40,6 +40,12 @@ public class Principal
 										
 					break;
 				case 3:
+					empregadoRemover= Console.readLine("Informe o nome do empregado a ser removido: ");
+					for (int i=0; i<listaDeEmpregados.size(); i++){
+						if(listaDeEmpregados.get(i).getNome().equals(empregadoRemover))
+							listaDeEmpregados.remove(i);	
+					}
+					break;
 
 					break;
 				case 4:
@@ -54,7 +60,7 @@ public class Principal
 					continua = false;
 					break;
 				default:
-					System.out.println('\n' + "Opção inválida!");			
+					System.out.println('\n' + "Opï¿½ï¿½o invï¿½lida!");			
 					break;
 			}
 		}		
