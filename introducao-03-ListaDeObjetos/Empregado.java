@@ -5,6 +5,9 @@ public class Empregado
 	private String nome;
 	private double salario;
 	
+	public Empregado(){
+	}
+
 	public Empregado (String nome, double salario)
 	{	this.numero = ++contador;
 		this.nome = nome;
@@ -12,7 +15,7 @@ public class Empregado
 	}
 
 	public void imprime()
-	{	System.out.println ("Número = " + numero + "  Nome = " + nome + "  Salário = " + salario);
+	{	System.out.println ("Nï¿½mero = " + numero + "  Nome = " + nome + "  Salï¿½rio = " + salario);
 	}
 
 	public int getNumero()
