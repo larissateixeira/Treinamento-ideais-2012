@@ -8,7 +8,7 @@ public class Principal
 
 		ArrayList<Empregado> listaDeEmpregados = new ArrayList<Empregado>(TAM);
 
-		String nome;
+		String nome,empregadoRemover;
 		double salario;
 		Empregado umEmpregado;
 
